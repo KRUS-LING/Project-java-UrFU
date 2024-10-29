@@ -1,31 +1,26 @@
 public class Student {
-    private String id; // уникальный идентификатор студента
-    private String name; // имя студента
-    private String surname; // фамилия студента
-    private boolean isLocal; // true - местный, false - приезжий
-    private double gpa; // Средний балл
+    private String firstName;  // Имя студента
+    private String lastName;   // Фамилия студента
+    private int age;           // Возраст студента
+    private String group;      // Учебная группа студента
 
-    public Student(String id, String name, String surname, boolean isLocal, double gpa) {
-        this.id = id;
-        this.name = name;
-        this.surname = surname;
-        this.isLocal = isLocal;
-        this.gpa = gpa;
+    public Student(String firstName, String lastName, int age, String group) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.group = group;
     }
 
-    // Геттеры и сеттеры для полей
-    public String getId() { return id; }
-    public void setId(String id) { this.id = id; }
+    // Геттеры и сеттеры
+    public String getFirstName() { return firstName; }
+    public void setFirstName(String firstName) { this.firstName = firstName; }
 
-    public String getName() { return name; }
-    public void setName(String name) { this.name = name; }
+    public String getLastName() { return lastName; }
+    public void setLastName(String lastName) { this.lastName = lastName; }
 
-    public String getSurname() { return surname; }
-    public void setSurname(String surname) { this.surname = surname; }
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
 
-    public boolean isLocal() { return isLocal; }
-    public void setLocal(boolean isLocal) { this.isLocal = isLocal; }
-
-    public double getGpa() { return gpa; }
-    public void setGpa(double gpa) { this.gpa = gpa; }
+    public String getGroup() { return group; }
+    public void setGroup(String group) { this.group = group; }
 }
